@@ -203,10 +203,10 @@ void IpGoto::TARGS( ostream &ret, bool inFinish, int targState )
 void IpGoto::BREAK( ostream &ret, int targState, bool csForced )
 {
 	outLabelUsed = true;
-	ret << "{" << P() << "+= 1; ";
+	ret << "${" << P() << "+= 1; ";
 	if ( !csForced ) 
 		ret << vCS() << " = " << targState << "; ";
-	ret << "goto _out;}";
+	ret << "goto _out;}$";
 }
 
 void IpGoto::NBREAK( ostream &ret, int targState, bool csForced )
