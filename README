@@ -1,0 +1,19 @@
+
+                     Ragel State Machine Compiler -- README
+                     ======================================
+
+Building Ragel
+--------------
+
+To build ragel you need these dependencies
+
+http://www.colm.net/files/ragel/ragel-6.9.tar.gz
+http://www.colm.net/files/kelbt/kelbt-0.15.tar.gz
+http://www.colm.net/files/colm/colm-0.13.0.2.tar.gz
+
+Install them to your path, or configure ragel with:
+
+  --with-{ragel,kelbt,colm}=DEST
+
+To build the user guide pass "--enable-manual=yes" to the configure script. You
+will need the following extra programs:
