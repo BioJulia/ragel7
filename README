@@ -15,5 +15,10 @@ Install them to your path, or configure ragel with:
 
   --with-{ragel,kelbt,colm}=DEST
 
+If you see compile error while trying to build any of these, you may need to set
+the version of C++ explicitly with:
+
+  ./configure CXXFLAGS=-std=gnu++98
+
 To build the user guide pass "--enable-manual=yes" to the configure script. You
 will need the following extra programs:
